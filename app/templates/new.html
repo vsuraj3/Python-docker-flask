@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action="/employeeDetail/new" method="POST">
+    <h3> Adding a row</h3>
+    <div class="row">
+        <div class="col">
+            <label for="Name">Employee Name</label>
+            <input id="Name" type="text" class="form-control" placeholder="Name" name="Name">
+        </div>
+        <div class="col">
+            <label for="Sex">Employee Sex</label>
+            <input id="Sex" type="text" class="form-control" placeholder="Sex"
+                   name="Sex">
+        </div>
+        <div class="col">
+            <label for="Age">Employee Age</label>
+            <input id="Age" type="text" class="form-control" placeholder="Employee Age" name="Age">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <label for="Height_in">Employee Height</label>
+            <input id="Height_in" type="text" class="form-control" placeholder="Height_in" name="Height_in">
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="Weight_lbs">Employee Weight</label>
+
+            <input id="Weight_lbs" type="text" class="form-control" placeholder="Weight_lbs"
+                   name="Weight_lbs">
+        </div>
+
+    </div>
+    <br/>
+    <button type="submit" class="btn btn-success">Add Data</button>
+
+</form>
+
+{% endblock %}
