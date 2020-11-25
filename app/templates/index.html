@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Sex</th>
+        <th scope="col">Age</th>
+        <th scope="col">Height</th>
+        <th scope="col">Weight</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for employee in employeeDetail %}
+    <tr>
+        <td><a href="view/{{employee.id}}">{{ employee.Name }}</a></td>
+        <td>{{ employee.Sex }}</td>
+        <td>{{ employee.Age }}</td>
+        <td>{{ employee.Height_in }}</td>
+        <td>{{ employee.Weight_lbs }}</td>
+
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
